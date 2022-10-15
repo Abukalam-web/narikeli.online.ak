@@ -7,10 +7,31 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body{
     background-color: #000;
 
 }
+
+/* scroll bar css code */
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background: linear-gradient(transparent,red,yellow);
+    box-shadow: 1px 5px 3px red;
+}
+
+/* scroll bar css code end */
+
+/* main page er css code shuru */
+
 .circle-01::before{
     content: '';
     width: 100%;
@@ -640,7 +661,7 @@ cursor: pointer;
     position: relative;
 }
 .jkkk{
-    color: aquamarine;
+    color: lightgrey;
     text-align: justify;
 }
 .dot-00{
@@ -738,7 +759,7 @@ cursor: pointer;
 .card-body-text-00 p{
     margin-top: 5%;
     text-align: justify;
-    color: aquamarine;
+    color: lightgrey;
     margin-left: 1%;
     word-spacing: 2px;
 }
