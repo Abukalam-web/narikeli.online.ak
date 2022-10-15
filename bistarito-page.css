@@ -1,0 +1,372 @@
+
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background: linear-gradient(transparent,red,yellow);
+    box-shadow: 1px 5px 3px red;
+}
+
+
+
+.all-header-00{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-head{
+    color: lightcyan;
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.circle-01-s-1::before{
+    content: '';
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to top right,pink,red);
+    animation-name: a1;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+
+.circle-01-s-1::after{
+    content: '';
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: 8%;
+    right: 10%;
+    background-image: linear-gradient(to top right,yellow,red);
+    animation-name: a2;
+    animation-timing-function: linear;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    border-radius:50% ;
+}
+
+@keyframes a1{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+
+
+}
+
+@keyframes a2{
+    0%{
+        bottom: 4%;
+        right: 4%;
+        transform: rotate(0deg);
+
+    }
+
+    33%{
+        bottom: 15%;
+        right: 8%;
+        transform: rotate(120deg);
+        box-shadow: 0px 0px 10px red,
+        0px 0px 20px yellow,
+        0px 0px 40px red,
+        0px 0px 80px yellow;    }
+
+    66%{
+        bottom: 28%;
+        right: 3%;
+        transform: rotate(240deg);
+    }
+
+    100%{
+        bottom: 4%;
+        right: 4%;
+        transform: rotate(360deg);
+        box-shadow: 0px 0px 10px red,
+        0px 0px 20px yellow,
+        0px 0px 40px red,
+        0px 0px 80px yellow;
+
+    }
+}
+
+
+
+.main-box{
+    width: 80%;
+    height: 550px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 1px 4px 10px grey;
+}
+
+
+/* header dot animation */
+.head-animation-00{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.head-animation-00-0{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.head-animation-01{
+    width: 98.5%;
+    height: 5px;
+    border-radius: 10px;
+    background: linear-gradient(to right,red,yellow);
+    margin-top: 0%;
+    animation: ann00 7s linear  infinite ;
+}
+
+.head-animation-01-0{
+    width: 98.5%;
+    height: 5px;
+    border-radius: 10px;
+    background: linear-gradient(to right,red,yellow);
+    animation: ann00-0 7s linear  infinite ;
+
+}
+
+
+@keyframes ann00-0{
+    0%{
+        background: linear-gradient(to right,red,green);
+        width: 98.5%;
+    }
+
+    50%{
+        width: 0.5%;
+        background: linear-gradient(to top left,red,yellow);
+
+    }
+    100%{
+        width: 98.5%;
+        background: linear-gradient(to right,red,gold);
+    }
+}
+
+
+@keyframes ann00{
+    0%{  width: 1%;
+        background: linear-gradient(to right,red,yellow);
+
+    }
+
+    50%{
+        width: 98.5%;
+        background: linear-gradient(to top left,red,yellow);
+
+    }
+    100%{
+        width: 1%;
+        background: linear-gradient(to right,red,gold);
+    }
+}
+
+.button-section-01{
+    width: 90%;
+    height: 80px;
+    /* border: 1px solid red; */
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 7%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.btn-1 , .btn-2, .btn-3{
+    width: 28%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 4px 10px grey;
+    border-radius: 40px;
+    margin: auto;
+    transition: all 0.33s ease-in-out;
+    
+}
+a{
+    color: blueviolet;
+    padding: 7px 20px;
+    font-size: 20px;
+    color: violet;
+    text-decoration: none;
+
+}
+
+.btn-1:hover , .btn-2:hover, .btn-3:hover{
+    background-image: linear-gradient(to left top,red,yellow);
+    box-shadow: 0px 0px 10px red,
+    0px 0px 20px yellow,
+    0px 0px 40px red,
+    0px 0px 80px yellow;
+    transform: scale(1.1);
+    color: white;
+
+}
+a:hover{
+    color: white;
+}
+
+
+
+
+
+@media screen and (max-width:990px){
+  a{
+    font-size: 16px;
+  }
+  .btn-1 , .btn-2, .btn-3{
+    width: 28%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 4px 10px grey;
+    border-radius: 40px;
+    margin: auto;
+    
+}
+
+.button-section-01{
+    width: 90%;
+    height: 70px;
+    /* border: 1px solid red; */
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+}
+
+@media screen and (max-width: 833px){
+    .btn-1 , .btn-2, .btn-3{
+        width: 28%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 1px 4px 10px grey;
+        border-radius: 40px;
+        margin: auto;
+
+        
+    }
+
+    .button-section-01{
+        width: 90%;
+        height: 60px;
+        /* border: 1px solid red; */
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 4%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 815px){
+    a{
+        font-size: 15px;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .button-section-01{
+       flex-direction: column;
+       height: 230px;
+       margin-top: 7px;
+
+    }
+
+    .btn-1, .btn-2, .btn-3 {
+        width: 70%;
+        height: 70px;
+        margin-top: 20px;
+    }
+    .main-box {
+        width: 80%;
+        height: 766px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 40px;
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        background: rgba(255, 255, 255, 0.6);
+        box-shadow: 1px 4px 10px grey;
+    }
+
+    
+}
+
+@media screen and (max-width: 0px){
+    
+}
+
+@media screen and (max-width: 0px){
+    
+}
+
+@media screen and (max-width: 0px){
+    
+}
+
+@media screen and (max-width: 0px){
+    
+}
+
+@media screen and (max-width: 0px){
+    
+}
+
+@media screen and (max-width: 0px){
+    
+}
+
+@media screen and (max-width: 0px){
+    
+}
+
